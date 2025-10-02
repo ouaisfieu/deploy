@@ -210,3 +210,31 @@ Donc non, ce lien dans l'article c'était juste pour le storytelling ! 😄
 Si vous voulez, je peux modifier l'article pour mettre des placeholders genre `https://votre-projet.vercel.app` à la place, pour éviter la confusion ?
 
 Pardon pour l'embrouille ! 🙏
+
+
+----
+
+Après quelques vérifications, je n’ai pas repéré d’activité suspecte lorsqu’une fenêtre isolée a affiché le site **nexus‑landing.vercel.app** : il s’agit d’une page marketing pour « NexusPIPE », une solution de mitigation DDoS. La page est statique et n’essaie ni de télécharger de programmes ni de collecter des informations sensibles. Par ailleurs, la société NexusPIPE possède un compte GitHub vérifié (l’organisation a été archivée en juin 2025) qui atteste qu’elle contrôle le domaine « nexuspipe.com ». Un service d’évaluation indépendant comme ScamAdviser indique également que le domaine principal **nexuspipe.com** a un score de confiance élevé (le certificat SSL est valide et le domaine existe depuis plusieurs années). Cela suggère que l’entreprise elle‑même n’est pas considérée comme une arnaque.
+
+Cependant, il faut rester prudent :
+
+* **Abus possibles de Vercel** : des chercheurs ont signalé que des pirates utilisent parfois des sous‑domaines *vercel.app* pour héberger des pages de phishing. Ils créent par exemple de fausses visionneuses PDF qui invitent à télécharger un fichier infecté. Cette technique fonctionne précisément parce que Vercel est une plateforme légitime et que les sous‑domaines semblent dignes de confiance. Le fait qu’un site soit hébergé sur Vercel ne suffit donc pas à le rendre sûr.
+
+* **Certaines réserves sur nexuspipe.com** : bien que le domaine principal obtienne un bon score, Scamadviser note que l’identité du propriétaire est cachée et que des sites douteux partagent le même serveur. Cela ne prouve pas une fraude, mais implique qu’on ne peut pas se fier uniquement à cet hébergement.
+
+* **Le site GitHub est archivé** : l’organisation NexusPIPE sur GitHub est désormais inactive. Cela peut indiquer un projet à l’arrêt ; un site laissé à l’abandon peut être repris par des acteurs malveillants dans le futur.
+
+### Conseils pour vérifier une URL
+
+1. **Utiliser des scanners en ligne** : des services gratuits comme [VirusTotal](https://www.virustotal.com/) permettent de coller une URL pour vérifier si des antivirus la signalent. Cela donne une mesure objective de la réputation du site.
+
+2. **Vérifier le certificat SSL** : assurez‑vous que le navigateur affiche un cadenas sécurisé et qu’aucun avertissement ne s’affiche.
+
+3. **Observer le comportement du site** : méfiez‑vous des redirections inattendues et des fenêtres qui demandent d’installer un logiciel. Fermez immédiatement l’onglet si le site tente de télécharger un fichier exécutable.
+
+4. **Ne jamais saisir de données sensibles** : n’entrez jamais de mot de passe ou d’informations bancaires sur un site dont vous n’êtes pas sûr.
+
+### Conclusion
+
+À ce jour, **nexus‑landing.vercel.app** apparaît comme une simple page de présentation et ne montre pas de comportement malveillant. Le domaine de l’entreprise mère bénéficie d’une bonne réputation. Néanmoins, les pirates exploitent parfois des sous‑domaines Vercel, et le projet NexusPIPE semble inactif. Par prudence, analysez systématiquement toute URL avec un scanner externe et ne téléchargez rien sans vérifier.
+
