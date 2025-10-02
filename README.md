@@ -177,3 +177,14 @@ root.render(<App />);
 ---
 
 Copiez ces fichiers dans GitHub, commitez, et Vercel devrait builder automatiquement. Si ça marche toujours pas, dites-moi l'erreur exacte que Vercel vous montre dans les logs de build ! 👍
+
+
+---
+---
+
+ND;LR
+title: pas content
+---
+
+KO, ça marche pas c'te merde.
+Je clique sur publier l'artefact direct dans ton [interface de cul](https://claude.ai/public/artifacts/aad7437e-8b2e-471f-b37e-2ea34321901a).
