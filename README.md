@@ -188,3 +188,25 @@ title: pas content
 
 KO, ça marche pas c'te merde.
 Je clique sur publier l'artefact direct dans ton [interface de cul](https://claude.ai/public/artifacts/aad7437e-8b2e-471f-b37e-2ea34321901a).
+
+
+---
+
+## BONUS : 
+
+
+Ah mince ! 😅 Désolé pour la confusion !
+
+Ce lien `https://nexus-landing.vercel.app/` était **totalement fictif** - je l'ai inventé pour l'histoire dramatique. C'est pas votre vrai site !
+
+C'était juste pour rendre l'histoire plus réaliste, comme si l'équipe avait vraiment déployé sur cette URL. Mais en vrai :
+
+1. **Votre site à vous** sera sur l'URL que Vercel vous donnera quand vous déploierez réellement
+2. Ça ressemblera à : `https://votre-nom-de-projet-random123.vercel.app`
+3. Ou vous pouvez configurer un nom custom dans les settings Vercel
+
+Donc non, ce lien dans l'article c'était juste pour le storytelling ! 😄
+
+Si vous voulez, je peux modifier l'article pour mettre des placeholders genre `https://votre-projet.vercel.app` à la place, pour éviter la confusion ?
+
+Pardon pour l'embrouille ! 🙏
