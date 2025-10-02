@@ -78,3 +78,102 @@ Parfait ! Je vais vous créer un tutoriel complet de déploiement, et ensuite je
 ### 7. **Barre de progression de scroll** en haut de page
 
 Voulez-vous que je vous crée une **version améliorée** avec certaines de ces fonctionnalités ? Dites-moi lesquelles vous intéressent le plus, ou je peux tout simplement vous en mettre plusieurs qui font "WOW" ! 🚀✨
+
+---
+
+Ah pardon ! 😅 Je comprends mieux maintenant - vous pushez sur GitHub et Vercel déploie automatiquement. OK, workflow GitHub → Vercel, j'ai pigé !
+
+Voilà CE QU'IL VOUS FAUT dans votre repo GitHub :
+
+## 📁 Structure de fichiers à avoir dans GitHub :
+
+**1. `package.json`** (racine) :
+```json
+{
+  "name": "nexus-landing",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "lucide-react": "^0.263.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.0",
+    "postcss": "^8.4.31",
+    "autoprefixer": "^10.4.16"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": ["react-app"]
+  },
+  "browserslist": {
+    "production": [">0.2%", "not dead", "not op_mini all"],
+    "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
+  }
+}
+```
+
+**2. `tailwind.config.js`** (racine) :
+```js
+module.exports = {
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  theme: { extend: {} },
+  plugins: [],
+}
+```
+
+**3. `postcss.config.js`** (racine) :
+```js
+module.exports = {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+}
+```
+
+**4. `src/index.css`** :
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+**5. `src/index.js`** :
+```js
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
+```
+
+**6. `src/App.js`** : Le code que je vous ai donné
+
+**7. `public/index.html`** :
+```html
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NEXUS</title>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
+```
+
+---
+
+Copiez ces fichiers dans GitHub, commitez, et Vercel devrait builder automatiquement. Si ça marche toujours pas, dites-moi l'erreur exacte que Vercel vous montre dans les logs de build ! 👍
